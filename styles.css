@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-bg-color: #eee;
+  --secondary-bg-color: #fff;
+  --primary-tx-color: #666;
+  --secondary-tx-color: #999;
+}
+
+body.active {
+  --primary-bg-color: #222;
+  --secondary-bg-color: #333;
+  --primary-tx-color: #fff;
+  --secondary-tx-color: #eee;
+}
+
+body.active h1 {
+  color: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: var(--primary-bg-color);
+}
+
+.container {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .content {
+  width: 400px;
+  background: var(--secondary-bg-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .content p {
+  line-height: 2;
+  color: var(--primary-tx-color);
+}
+
+h1 {
+  position: fixed;
+  top: 15px;
+  left: 25px;
+}
+#theme-toggler {
+  position: fixed;
+
+  top: 15px;
+  right: 25px;
+  padding: 15px 20px;
+  font-size: 30px;
+  background: var(--secondary-bg-color);
+  color: var(--primary-tx-color);
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
